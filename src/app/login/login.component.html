@@ -20,14 +20,14 @@
         <input type="password" #passref="ngModel" name="passref" required class="form-control" ngModel>
         <div *ngIf="passref.errors && (passref.dirty || passref.touched)" class="alert alert-danger">
               <div [hidden]="!passref.errors.required">
-                <b>Please enter a name</b>
+                <b>Please enter password</b>
               </div>
             </div>
               
 
         </div>
     <div class="form-group">
-        <button [disabled]="loading" class="btn btn-primary">Login</button>
+        <button [disabled]="!userForm.form.valid" class="btn btn-primary">Login</button>
   </div>
     </form>
   </div>
