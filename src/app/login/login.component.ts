@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   onSubmit(userForm : NgForm){
-    alert(JSON.stringify(userForm.value));
+    localStorage.setItem("username",userForm.value.username);
   }
 
 }

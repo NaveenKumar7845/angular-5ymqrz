@@ -9,6 +9,9 @@ import { LoginComponent } from './login/login.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations"
+
 
 
 
@@ -17,8 +20,10 @@ import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModuleModule,MatCardModule,MatFormFieldModule,MatInputModule,ReactiveFormsModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModuleModule,MatCardModule,MatFormFieldModule,MatInputModule,ReactiveFormsModule,MatSidenavModule,BrowserAnimationsModule ],
   declarations: [ AppComponent, HelloComponent, MainComponentComponent, LoginComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+
+
 })
 export class AppModule { }
