@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-component.component.css']
 })
 export class MainComponentComponent implements OnInit {
-showFiller = false;
+events: string[] = [];
+  opened: boolean;
   constructor() { 
 
   }
